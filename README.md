@@ -28,7 +28,7 @@ More information can be found here: https://cc65.github.io/
 Very easily:
 
 ```bash
-docker run -v ${PWD}:/code barrywalker/cc65:latest /code/main.c -o /code/main.prg
+docker run -v ${PWD}:/code barrywalker/cc65:latest cl65 /code/main.c -o /code/main.prg
 ```
 
 This will mount your current directory to `/code`, compile the C file `main.c` and deposit the artifacts back to your current working directory.
